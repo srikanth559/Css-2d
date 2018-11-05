@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<style>
+.grid-container {
+  display: grid;
+  grid-gap: 0.5%;
+  grid-template: repeat(10,13%)
+                 /repeat(18,5%);
+  padding: 0.5%;
+  align-items: center;
+  justify-content: center;/* https://en.wikipedia.org/wiki/Periodic_table  */
+}
+
+h1{
+text-align: center;
+color: red;
+}
+
+.hide{
+
+visibility: hidden;
+}
+.grid-item {
+ 
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.nonmetal
+{
+    background-color:yellow;
+}
+.halogen
+{
+    background-color:coral;
+}
+.metoloid
+{
+    background-color:pink;
+}
+.metal
+{
+    background-color:olivedrab;
+}
+.Alkalimetal
+{
+    background-color:mediumturquoise;
+}
+.Alkali_earth_metal
+{
+    background-color:mediumseagreen;
+}
+.transitionmetal
+{
+    background-color:limegreen;
+}
+.nobleGas
+{
+    background-color:lightgrey;
+}
+
+.Lanthanoid
+{
+    background-color:lightgoldenrodyellow;
+}
+
+.actinoid
+{
+    background-color:lawngreen;
+}
+
+.invisible
+{
+    background-color:indianred;
+    color:indianred;
+}
+</style>
+</head>
+<body>
+
+<h1>Periodic Table Using CSS 2D Grid</h1><br><br><br>
+<div class="grid-container">
+  <div class="grid-item nonmetal">H</div>
+  <div class="grid-item hide">5</div>
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div>    
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div>    
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item hide">5</div> 
+  <div class="grid-item nobleGas">HE</div> 
+  <div class="grid-item Alkalimetal">LI</div>
+  <div class="grid-item Alkali_earth_metal">BE</div>
+  <div class="grid-item hide"></div> 	
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item hide"></div> 
+  <div class="grid-item metoloid">B</div>  	
+  <div class="grid-item nonmetal">C</div>
+  <div class="grid-item nonmetal">N</div>
+  <div class="grid-item nonmetal">O</div>  
+  <div class="grid-item halogen">F</div>
+  <div class="grid-item nobleGas">Ne</div>
+  <div class="grid-item Alkalimetal">Na</div>
+  <div class="grid-item Alkali_earth_metal">Mg</div>
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item hide"></div>  	
+  <div class="grid-item metal">Al</div>  	
+  <div class="grid-item metoloid" >Si</div>
+  <div class="grid-item nonmetal">P</div>
+  <div class="grid-item nonmetal">S</div>  
+  <div class="grid-item halogen">Cl</div>
+  <div class="grid-item nobleGas">Ar</div>
+ <div class="grid-item Alkalimetal">K</div>
+  <div class="grid-item Alkali_earth_metal">Ca</div>
+  <div class="grid-item transitionmetal">Sc</div>  	
+  <div class="grid-item transitionmetal">Ti</div>
+  <div class="grid-item transitionmetal">V</div>
+  <div class="grid-item transitionmetal">Cr</div>  
+  <div class="grid-item transitionmetal">Mn</div>
+  <div class="grid-item transitionmetal">Fa</div>
+  <div class="grid-item transitionmetal">Co</div>  
+  <div class="grid-item transitionmetal">Ni</div>
+  <div class="grid-item transitionmetal">Cu</div>
+  <div class="grid-item transitionmetal">Zn</div>
+  <div class="grid-item metal">Ga</div>  	
+  <div class="grid-item metoloid">Ge</div>
+  <div class="grid-item metoloid">As</div>
+  <div class="grid-item nonmetal">Se</div>  
+  <div class="grid-item halogen">Br</div>
+  <div class="grid-item nobleGas">Kr</div>
+    <div class="grid-item Alkalimetal">Rp</div>
+  <div class="grid-item Alkali_earth_metal">Sr</div>
+  <div class="grid-item transitionmetal">Y</div>  	
+  <div class="grid-item transitionmetal">Zr</div>
+  <div class="grid-item transitionmetal">NB</div>
+  <div class="grid-item transitionmetal">Mo</div>  
+  <div class="grid-item transitionmetal">Tc</div>
+  <div class="grid-item transitionmetal">Ru</div>
+  <div class="grid-item transitionmetal">Rh</div>  
+  <div class="grid-item transitionmetal">Pd</div>
+  <div class="grid-item transitionmetal">Ag</div>
+  <div class="grid-item transitionmetal">Dd</div>
+  <div class="grid-item metal">In</div>  	
+  <div class="grid-item metal">Sn</div>
+  <div class="grid-item metoloid">Sb</div>
+  <div class="grid-item metoloid">Te</div>  
+  <div class="grid-item halogen">I</div>
+  <div class="grid-item nobleGas">Xe</div>
+    <div class="grid-item Alkalimetal">CS</div>
+  <div class="grid-item Alkali_earth_metal">Ba</div>
+  <div class="grid-item invisible">' '</div>  	
+  <div class="grid-item transitionmetal">Hf</div>
+  <div class="grid-item transitionmetal">Ta</div>
+  <div class="grid-item transitionmetal">W</div>  
+  <div class="grid-item transitionmetal">Re</div>
+  <div class="grid-item transitionmetal">Os</div>
+  <div class="grid-item transitionmetal">Ir</div>  
+  <div class="grid-item transitionmetal">PT</div>
+  <div class="grid-item transitionmetal">Au</div>
+  <div class="grid-item transitionmetal">Hg</div>
+  <div class="grid-item metal">Tl</div>  	
+  <div class="grid-item metal">Pb</div>
+  <div class="grid-item metal">Bi</div>
+  <div class="grid-item metoloid">Po</div>  
+  <div class="grid-item halogen">At</div>
+  <div class="grid-item nobleGas">Rn</div>
+    <div class="grid-item Alkalimetal">Fr</div>
+  <div class="grid-item Alkali_earth_metal">Ra</div>
+  <div class="grid-item invisible">''</div>  
+  <div class="grid-item transitionmetal">Rf</div>	
+  <div class="grid-item transitionmetal">Db</div>
+  <div class="grid-item transitionmetal">Sg</div>
+  <div class="grid-item transitionmetal">Bh</div>  
+  <div class="grid-item transitionmetal">Hs</div>
+  <div class="grid-item transitionmetal">Mt</div>
+  <div class="grid-item transitionmetal">Ds</div>  
+  <div class="grid-item transitionmetal">Rg</div>
+  <div class="grid-item transitionmetal">Cn</div>
+  <div class="grid-item metal">Uut</div>
+  <div class="grid-item metal">Fl</div>
+  <div class="grid-item halogen">Uup</div>  	
+  <div class="grid-item nobleGas">Lv</div>
+  <div class="grid-item Alkalimetal">Uus</div>
+  <div class="grid-item Alkali_earth_metal">Uuo</div> 
+    <div class="grid-item hide">1</div>
+  <div class="grid-item hide">2</div>
+  <div class="grid-item hide">3</div>  	
+  <div class="grid-item hide">4</div>
+  <div class="grid-item hide">5</div>
+  <div class="grid-item hide">6</div>  
+  <div class="grid-item hide">7</div>
+  <div class="grid-item hide">8</div>
+  <div class="grid-item hide">9</div>  
+  <div class="grid-item hide">10</div>
+  <div class="grid-item hide">11</div>
+  <div class="grid-item hide">12</div>
+  <div class="grid-item hide">13</div>  	
+  <div class="grid-item hide">14</div>
+  <div class="grid-item hide">15</div>
+  <div class="grid-item hide">16</div>  
+  <div class="grid-item hide">17</div>
+  <div class="grid-item hide">18</div>
+    <div class="grid-item hide">1</div>
+  <div class="grid-item Lanthanoid">La</div>
+  <div class="grid-item Lanthanoid">Ce</div>  	
+  <div class="grid-item Lanthanoid">Pr</div>
+  <div class="grid-item Lanthanoid">Nd</div>
+  <div class="grid-item Lanthanoid">Pm</div>  
+  <div class="grid-item Lanthanoid">Sm</div>
+  <div class="grid-item Lanthanoid">Eu</div>
+  <div class="grid-item Lanthanoid">Gd</div>  
+  <div class="grid-item Lanthanoid">Tb</div>
+  <div class="grid-item Lanthanoid">Dy</div>  
+  <div class="grid-item Lanthanoid">Ho</div>
+  <div class="grid-item Lanthanoid">Er</div>
+  <div class="grid-item Lanthanoid">Tm</div> 
+  <div class="grid-item Lanthanoid">Yb</div>  
+  <div class="grid-item hide">15</div>
+  <div class="grid-item hide">16</div>  
+  <div class="grid-item hide">17</div>
+  
+  <div class="grid-item hide">1</div>
+  <div class="grid-item actinoid">Ac</div>
+  <div class="grid-item actinoid">Th</div>
+  <div class="grid-item actinoid">Pa</div>
+  <div class="grid-item actinoid">U</div>
+  <div class="grid-item actinoid">Np</div>
+  <div class="grid-item actinoid">Pu</div>
+  <div class="grid-item actinoid">Am</div>
+  <div class="grid-item actinoid">Cm</div>
+  <div class="grid-item actinoid">Bk </div>
+  <div class="grid-item actinoid">Cf</div>
+  <div class="grid-item actinoid">Es</div>
+  <div class="grid-item actinoid">Fm</div>
+  <div class="grid-item actinoid">Md</div>
+  <div class="grid-item actinoid">No</div>
+  
+  <div class="grid-item hide">16</div>  
+  <div class="grid-item hide">17</div>
+  <div class="grid-item hide">18</div>
+</div>
+</body>
+</html>
